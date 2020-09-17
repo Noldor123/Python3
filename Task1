@@ -1,0 +1,38 @@
+import math
+def main():
+    a=float(input())
+    b=float(input())
+    c=float(input())
+    d=float(input())
+    if (a==0):
+        if (b==0):
+            print ("Hi, dude, it isn't equation")
+            sol1=sol2=None
+            Quantity=int(3)
+        else:
+            result1=float((d-c)/b)
+            print ("your result =",result1)
+            sol1=sol2=result1
+            Quantity=int(1)
+    else:
+        result1= ((((b*b-4*a*(c-d))-b)**(0.5))/(2*a))
+        result2= ((-((b*b-4*a*(c-d))-b)**(0.5))/(2*a))
+        print ("your result =",result1)
+        print ("your result =",result2)
+        sol1=result1
+        sol2=result2
+        Quantity=int(2)
+    """else:(увеличивает точность)
+        s= float(b*b-4*a*(c-d))
+        Im1=float((abs(s)**(0.5))/(2*a))
+        Im2=float(-(abs(s)**(0.5))/(2*a))
+        Re=float(-b/(2*a))
+        sol1=str("%f + %fj" %(Re,Im1))
+        sol2=str("%f + %fj" %(Re,Im2))
+        Quantity=int(2)
+        print ("%f + %fj" %(Re,Im1))
+        print ("%f + %fj" %(Re,Im2))"""
+    Solution= set([sol1,sol2])
+    return Quantity,Solution
+R = main()
+print(R)
