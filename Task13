@@ -1,0 +1,15 @@
+number=input()
+kode={'0':'0','1':'1','2':'2','3':'3','4':'4','5':'5','6':'6','7':'7','8':'8','9':'9','10': 'A','11':'B','12':'C','13':'D','14':'E','15':'F'}
+base1=int(input())
+numberstr=str(number)
+k=len(number)
+s=0
+for x in range (0,k):
+    s=int((numberstr[x]))*(base1**int(k-x-1))+s
+print(s)
+base2=int(input())
+num1=str()
+while s>0:
+    num1=str(kode[str((s%base2))])+num1
+    s=s//base2
+print(num1)
