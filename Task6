@@ -1,0 +1,12 @@
+import numpy as n
+from scipy import stats as s
+from statistics import median as m
+a=list(map(int,input().split()))
+b=max(a)
+c=min(a)
+d=n.mean(a)
+g=n.std(a)
+e=s.moment(a,moment=5)
+f=n.mean([b,c,d,g,e])
+mediana=m(a)
+print(b,c,d,e,g,f,mediana)
