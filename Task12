@@ -1,0 +1,6 @@
+import math
+a=int(input())
+b=int(input())
+c=math.gcd(a , b)
+d=a*b//c
+print(c,d)
