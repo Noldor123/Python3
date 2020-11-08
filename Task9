@@ -1,0 +1,11 @@
+a=input()
+#b=a.replace(' ,', ',')
+#c=b.replace(' .', '.')
+#d=' '.join(c.split())
+#e=d.replace(' ?')
+###i=iter(a)
+##for i in range[0, int(len(a))]:
+    ##if (ord(a[i])==32) and ord(a[i-1]==32):
+        ##a=a.replace('  ',' ')
+##if (ord(c[x])=46)
+#print(a)
